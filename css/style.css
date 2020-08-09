@@ -1,0 +1,54 @@
+/*This is the CSS file for the calculator.*/
+
+@import url('https://fonts.googleapis.com/css?family=Great Vibes');
+
+
+body {
+    background-image: linear-gradient(to left, pink, azure);
+    padding: 0;
+    margin: 0; 
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 4px 4px 4px #aaa;
+}
+.f-c {
+    font-family: 'Great Vibes';
+}
+
+.main-body {
+    display: grid;
+}
+
+.col-lg-4 {
+    padding: 15% 0;
+}
+
+.btn {
+    border-radius: 50%;
+    margin: 2px;
+}
+
+@media (max-width: 992px) {
+    .col-lg-4 {
+        padding: 0;        
+    }
+
+    h1 {
+        margin-top: 2%;
+    }
+}
+
+.col-lg-8 {
+    padding: 10% 0;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0;
+}

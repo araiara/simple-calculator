@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main-body">
+        <div class="row">
+            <div class="col-lg-4"> 
+                <h1 class="f-c">My Calculator</h1>
+                <p class="text-center">A simple calculator using HTML5, CSS, and JS.</p>
+                <p class="text-center f-c">&copy; 2020 <a href="https://arsanarai.com.np/">Arsana Rai</a></p>   
+            </div>
+            <div class="col-lg-8">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="result" readonly />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('1')">1</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('2')">2</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('3')">3</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('4')">4</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('5')">5</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('6')">6</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('7')">7</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('8')">8</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('9')">9</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="document.getElementById('result').value = ''">C</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('0')">0</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="solution()">=</button></td>
+                        <td><button type="button" class="btn btn-light btn-lg" onclick="display('/')">/</button></td>
+                    </tr>
+                </table>               
+            </div>
+        </div>      
+    </div>  
+</body>
+<script src="./js/calculator.js"></script>
+</html>
